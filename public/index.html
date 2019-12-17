@@ -14,9 +14,9 @@
     <h1>To Do List</h1>
     <form v-on:submit.prevent="saveNewThingToDo">
       <label for="new-thing">What do you need to do?</label>
-      <input v-model="newThingToDo" type="text" id="new-thing" name="name">
+      <input v-model="newThingToDo.name" type="text" id="new-thing" name="name">
       <label for="high-priority">High</label>
-      <input v-model="newPriority" type="radio" name="highPriority" value="true" id="high-priority">
+      <input v-model="newThingToDo.highPriority" type="radio" name="highPriority" value="true" id="high-priority">
       <label for="low-priority">Low</label>
       <input type="radio" name="highPriority" value="false" id="low-priority">
       <input type="submit" value="Save">
